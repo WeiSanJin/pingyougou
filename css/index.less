@@ -73,12 +73,34 @@
                 // width: 252px;
 
                 li {
+                    position: relative;
                     float: left;
                     width: 63px;
                     height: 70px;
                     border-right: 1px solid #e4e4e4;
                     border-bottom: 1px solid #e4e4e4;
                     text-align: center;
+
+                    .bookmark {
+                        position: absolute;
+                        width: 12px;
+                        height: 18px;
+                        right: 0;
+                        font-size: 12px;
+                        line-height: 12px;
+                        color: #fff;
+                        background-color: rgb(88, 157, 90);
+                    }
+
+                    .bookmark::after {
+                        position: absolute;
+                        // display: inline;
+                        content: '';
+                        top: 6px;
+                        right: 0;
+                        border: 6px solid transparent;
+                        border-bottom-color: #fff;
+                    }
 
                     i {
                         display: block;
@@ -287,14 +309,16 @@
                     text-align: center;
 
                     a {
-
-                        img {
-                            height: 141px;
-                            text-align: center;
+                        .like_img {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 150px;
                         }
 
+
                         p {
-                            margin: 9px 36px;
+                            margin: 9px 36px 2px 36px;
                             font-size: 12px;
                             font-family: SimSun;
                             color: #666666;
@@ -329,34 +353,193 @@
 
 // amusing 传智播客-有趣区模块
 .amusing {
-    .w {
-        background: pink;
+    margin-top: 20px;
 
-        .box_hd {}
+    .w {
+        .box_hd {
+            h3 {
+                font-size: 18px;
+                color: #343434;
+                line-height: 36px;
+            }
+        }
+
+        .best_info {
+            position: absolute;
+            top: 68px;
+            left: 10px;
+
+            .title {
+                font-size: 16px;
+                line-height: 32px;
+            }
+
+            .desc {
+                font-size: 12px;
+                line-height: 22px;
+            }
+
+            .desc_red {
+                font-size: 12px;
+                line-height: 22px;
+                color: #E60012;
+            }
+        }
 
         .box_bd {
-            height: 407px;
+            height: 405px;
+            border: 1px solid #EDEDED;
+
+            .interest {
+                float: left;
+                width: 404px;
+                height: 404px;
+                background: #B8BDDD;
+
+                p {
+                    padding: 25px 0 47px 25px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #3B468D;
+                    line-height: 24px;
+                }
+
+                img {
+                    margin: 0 54px 22px 125px;
+                }
+            }
+
+            .best {
+                float: left;
+                width: 225px;
+                height: 405px;
+
+                h4 {
+                    display: inline-block;
+                    margin: 0 18px;
+                    width: 190px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #333333;
+                    line-height: 40px;
+                    text-align: center;
+                    border-bottom: 1px solid #EDEDED;
+                }
+
+                ul {
+                    li {
+                        position: relative;
+                        align-items: center;
+                        height: 205px;
+                        color: #333333;
+
+                        img {
+                            position: absolute;
+                            right: 0;
+                            bottom: 10px;
+                        }
+                    }
+
+                    li:last-child {
+                        height: 157px;
+
+                        img {
+                            bottom: 0px;
+                        }
+                    }
+
+                    .border_down {
+                        border-bottom: 1px solid #EDEDED;
+                    }
+                }
+            }
+
+            .brands {
+                float: left;
+                width: 404px;
+                height: 405px;
+                background-color: #F7F7F7;
+                border-left: 1px solid #EDEDED;
+                border-right: 1px solid #EDEDED;
+
+                h4 {
+                    display: inline-block;
+                    margin: 0 18px;
+                    width: 365px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #333333;
+                    line-height: 40px;
+                    text-align: center;
+                    border-bottom: 1px solid #EDEDED;
+                }
+
+                .box {
+                    position: relative;
+                    height: 205px;
+                    border-bottom: 1px solid #EDEDED;
+
+                    img {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+
+                ul {
+
+
+                    li {
+                        position: relative;
+                        float: left;
+                        width: 201px;
+                        height: 158px;
+
+                        img {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+                    }
+
+                    li:first-child {
+                        border-right: 1px solid #EDEDED;
+                    }
+                }
+            }
 
             .brand_list {
                 float: right;
-                width: 171px;
+                width: 164px;
+                height: 405px;
 
                 ul {
-                    padding-top: 5px;
+                    padding-top: 15px;
 
                     li {
                         float: left;
-                        height: 57px;
-                        width: 85px;
+                        height: 54px;
+                        width: 82px;
 
                         a {
                             height: 57px;
                             text-align: center;
+                            // 弹性盒子布局
                             display: flex;
+                            // 水平居中
                             align-items: center;
-
-                            img {}
+                            // 垂直居中
+                            justify-content: center;
                         }
+                    }
+
+                    li:nth-of-type(-n+12) {
+
+                        border-bottom: 1px dashed #EDEDED;
+                    }
+
+                    li:nth-of-type(2n+1) {
+                        border-right: 1px dashed #EDEDED;
                     }
                 }
             }
@@ -380,11 +563,11 @@
 
         .tab_list {
             float: right;
+            margin-top: 24px;
 
             ul {
                 li {
                     float: left;
-                    margin-top: 25px;
                     font-size: 12px;
                     color: #666666;
                     line-height: 30px;
@@ -427,7 +610,13 @@
                         line-height: 32px;
                         color: #666666;
                     }
+
+
                 }
+            }
+
+            img {
+                padding: 25px 0;
             }
         }
 

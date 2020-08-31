@@ -103,7 +103,10 @@
   background: #F7F7F7;
   border: 1px solid #DFDFDF;
 }
-.header .shopcar .count {
+.header .shopcar a {
+  padding: 11px 2px;
+}
+.header .shopcar a .count {
   position: absolute;
   padding: 0 5px;
   top: -4px;

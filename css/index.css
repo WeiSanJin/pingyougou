@@ -59,12 +59,31 @@
   border-left: 1px solid #e4e4e4;
 }
 .main .newsflash .lifeservice ul li {
+  position: relative;
   float: left;
   width: 63px;
   height: 70px;
   border-right: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
   text-align: center;
+}
+.main .newsflash .lifeservice ul li .bookmark {
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  right: 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  background-color: #589d5a;
+}
+.main .newsflash .lifeservice ul li .bookmark::after {
+  position: absolute;
+  content: '';
+  top: 6px;
+  right: 0;
+  border: 6px solid transparent;
+  border-bottom-color: #fff;
 }
 .main .newsflash .lifeservice ul li i {
   display: block;
@@ -224,12 +243,14 @@
   width: 199px;
   text-align: center;
 }
-.like .w .bd ul li a img {
-  height: 141px;
-  text-align: center;
+.like .w .bd ul li a .like_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
 }
 .like .w .bd ul li a p {
-  margin: 9px 36px;
+  margin: 9px 36px 2px 36px;
   font-size: 12px;
   font-family: SimSun;
   color: #666666;
@@ -252,29 +273,156 @@
   height: 62px;
   background: #EDEDED;
 }
-.amusing .w {
-  background: pink;
+.amusing {
+  margin-top: 20px;
+}
+.amusing .w .box_hd h3 {
+  font-size: 18px;
+  color: #343434;
+  line-height: 36px;
+}
+.amusing .w .best_info {
+  position: absolute;
+  top: 68px;
+  left: 10px;
+}
+.amusing .w .best_info .title {
+  font-size: 16px;
+  line-height: 32px;
+}
+.amusing .w .best_info .desc {
+  font-size: 12px;
+  line-height: 22px;
+}
+.amusing .w .best_info .desc_red {
+  font-size: 12px;
+  line-height: 22px;
+  color: #E60012;
 }
 .amusing .w .box_bd {
-  height: 407px;
+  height: 405px;
+  border: 1px solid #EDEDED;
+}
+.amusing .w .box_bd .interest {
+  float: left;
+  width: 404px;
+  height: 404px;
+  background: #B8BDDD;
+}
+.amusing .w .box_bd .interest p {
+  padding: 25px 0 47px 25px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3B468D;
+  line-height: 24px;
+}
+.amusing .w .box_bd .interest img {
+  margin: 0 54px 22px 125px;
+}
+.amusing .w .box_bd .best {
+  float: left;
+  width: 225px;
+  height: 405px;
+}
+.amusing .w .box_bd .best h4 {
+  display: inline-block;
+  margin: 0 18px;
+  width: 190px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #EDEDED;
+}
+.amusing .w .box_bd .best ul li {
+  position: relative;
+  align-items: center;
+  height: 205px;
+  color: #333333;
+}
+.amusing .w .box_bd .best ul li img {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.amusing .w .box_bd .best ul li:last-child {
+  height: 157px;
+}
+.amusing .w .box_bd .best ul li:last-child img {
+  bottom: 0px;
+}
+.amusing .w .box_bd .best ul .border_down {
+  border-bottom: 1px solid #EDEDED;
+}
+.amusing .w .box_bd .brands {
+  float: left;
+  width: 404px;
+  height: 405px;
+  background-color: #F7F7F7;
+  border-left: 1px solid #EDEDED;
+  border-right: 1px solid #EDEDED;
+}
+.amusing .w .box_bd .brands h4 {
+  display: inline-block;
+  margin: 0 18px;
+  width: 365px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #EDEDED;
+}
+.amusing .w .box_bd .brands .box {
+  position: relative;
+  height: 205px;
+  border-bottom: 1px solid #EDEDED;
+}
+.amusing .w .box_bd .brands .box img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.amusing .w .box_bd .brands ul li {
+  position: relative;
+  float: left;
+  width: 201px;
+  height: 158px;
+}
+.amusing .w .box_bd .brands ul li img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.amusing .w .box_bd .brands ul li:first-child {
+  border-right: 1px solid #EDEDED;
 }
 .amusing .w .box_bd .brand_list {
   float: right;
-  width: 171px;
+  width: 164px;
+  height: 405px;
 }
 .amusing .w .box_bd .brand_list ul {
-  padding-top: 5px;
+  padding-top: 15px;
 }
 .amusing .w .box_bd .brand_list ul li {
   float: left;
-  height: 57px;
-  width: 85px;
+  height: 54px;
+  width: 82px;
 }
 .amusing .w .box_bd .brand_list ul li a {
   height: 57px;
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.amusing .w .box_bd .brand_list ul li:nth-of-type(-n+12) {
+  border-bottom: 1px dashed #EDEDED;
+}
+.amusing .w .box_bd .brand_list ul li:nth-of-type(2n+1) {
+  border-right: 1px dashed #EDEDED;
 }
 .floor .box_hd {
   height: 56px;
@@ -289,10 +437,10 @@
 }
 .floor .box_hd .tab_list {
   float: right;
+  margin-top: 24px;
 }
 .floor .box_hd .tab_list ul li {
   float: left;
-  margin-top: 25px;
   font-size: 12px;
   color: #666666;
   line-height: 30px;
@@ -328,6 +476,9 @@
   font-size: 12px;
   line-height: 32px;
   color: #666666;
+}
+.floor .box_bd .col_210 img {
+  padding: 25px 0;
 }
 .floor .box_bd .swiper-container {
   width: 330px;
