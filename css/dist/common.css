@@ -1,0 +1,298 @@
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.style_red {
+  color: #C81623;
+}
+.shortcut {
+  width: 100%;
+  height: 31px;
+  line-height: 31px;
+  background: #F1F1F1;
+}
+.shortcut .fl ul li {
+  float: left;
+}
+.shortcut .fr ul li {
+  float: left;
+}
+.shortcut .fr ul li:nth-child(2n) {
+  width: 1px;
+  height: 12px;
+  margin: 9px 10px;
+  background-color: #666;
+}
+.shortcut .fr .icon-arrow::after {
+  content: '\e91e';
+  margin-left: 6px;
+}
+.header {
+  position: relative;
+  height: 105px;
+}
+.header .logo {
+  position: absolute;
+  top: 24px;
+  width: 171px;
+  height: 61px;
+}
+.header .logo a {
+  display: block;
+  width: 171px;
+  height: 61px;
+  font-size: 0;
+  background: url(../images/logo.png) no-repeat;
+}
+.header .search {
+  position: absolute;
+  top: 24px;
+  left: 346px;
+  width: 538px;
+  height: 36px;
+  border: 2px solid #B1191A;
+}
+.header .search input {
+  padding-left: 10px;
+  width: 454px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+.header .search button {
+  float: right;
+  width: 80px;
+  height: 32px;
+  background: #B1191A;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 21px;
+}
+.header .hotwrods {
+  position: absolute;
+  top: 69px;
+  left: 346px;
+  width: 538px;
+  height: 12px;
+}
+.header .hotwrods a {
+  margin: 0 10px;
+  font-size: 12px;
+  font-family: SimSun;
+  font-weight: 400;
+}
+.header .shopcar {
+  position: absolute;
+  top: 25px;
+  right: 63px;
+  width: 140px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #666666;
+  font-size: 12px;
+  background: #F7F7F7;
+  border: 1px solid #DFDFDF;
+}
+.header .shopcar .count {
+  position: absolute;
+  padding: 0 5px;
+  top: -4px;
+  left: 105px;
+  height: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #FEFEFE;
+  line-height: 14px;
+  background: #E60012;
+  border-radius: 50% 50% 50% 0;
+}
+.header .icon-cheveron-right::after {
+  content: '\e920';
+  padding-right: 15px;
+}
+.header .icon-cart::before {
+  padding-left: 19px;
+  content: '\e93a';
+  color: #D84A4A;
+}
+.nav {
+  width: 100%;
+  height: 47px;
+  border-bottom: 2px solid #B1191A;
+}
+.nav .dropdown {
+  float: left;
+  width: 209px;
+  height: 45px;
+  background: #C81623;
+}
+.nav .dropdown .dt {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  text-align: center;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+.nav .dropdown .dd {
+  width: 209px;
+  height: 467px;
+  margin-top: 2px;
+  background: #B1191A;
+}
+.nav .dropdown .dd ul li {
+  padding: 0 2px;
+  height: 31px;
+  line-height: 31px;
+}
+.nav .dropdown .dd ul li a {
+  display: block;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+.nav .dropdown .dd ul li a::after {
+  float: right;
+  padding-right: 11px;
+  content: '\e920';
+  font-family: 'icomoon' !important;
+}
+.nav .dropdown .dd ul li a:hover {
+  color: #C81623;
+  background-color: #fff;
+}
+.nav .navitems {
+  float: left;
+  height: 45px;
+  margin-left: 40px;
+}
+.nav .navitems ul li {
+  float: left;
+}
+.nav .navitems ul li a {
+  display: block;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #333333;
+}
+.nav .navitems ul li a:hover {
+  font-weight: 700;
+  color: #B1191A;
+}
+.footer {
+  height: 417px;
+  background: #F5F5F5;
+  padding-top: 30px;
+}
+.footer .w .mod_service {
+  height: 80px;
+  border-bottom: 1px solid #EDEDED;
+}
+.footer .w .mod_service ul li {
+  float: left;
+  width: 240px;
+  padding-left: 40px;
+}
+.footer .w .mod_service ul li i {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  background: url(../images/icons.png) no-repeat;
+  margin-right: 10px;
+}
+.footer .w .mod_service ul li .intro1 {
+  background-position: -252px -2px;
+}
+.footer .w .mod_service ul li .intro2 {
+  background-position: -255px -54px;
+}
+.footer .w .mod_service ul li .intro3 {
+  background-position: -256px -106px;
+}
+.footer .w .mod_service ul li .intro4 {
+  background-position: -258px -156px;
+}
+.footer .w .mod_service ul li .intro5 {
+  background-position: -256px -208px;
+}
+.footer .w .mod_service ul li h4 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 25px;
+}
+.footer .w .mod_service ul li p {
+  font-size: 12px;
+  font-family: SimSun;
+  font-weight: 400;
+  color: #666666;
+  line-height: 20px;
+}
+.footer .w .mod_help {
+  height: 187px;
+  border-bottom: 1px solid #EDEDED;
+}
+.footer .w .mod_help dl {
+  float: left;
+  margin: 21px 65px 0px 60px;
+}
+.footer .w .mod_help dl dt {
+  margin-bottom: 13px;
+  height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 16px;
+}
+.footer .w .mod_help dl dd {
+  font-size: 12px;
+  font-family: SimSun;
+  font-weight: 400;
+  color: #333333;
+  line-height: 20px;
+}
+.footer .w .mod_help .middle {
+  margin-right: 60px;
+  text-align: center;
+}
+.footer .w .mod_help .middle img {
+  margin-bottom: 5px;
+}
+.footer .w .mod_copyright {
+  width: 100%;
+  height: 119px;
+  padding: 0 114px;
+  text-align: center;
+}
+.footer .w .mod_copyright ul {
+  padding: 20px 0;
+}
+.footer .w .mod_copyright ul li {
+  display: inline;
+}
+.footer .w .mod_copyright ul li .space {
+  margin: 0 8px 0 10px;
+  font-size: 12px;
+  border-right: 1px solid #999999;
+}
+.footer .w .mod_copyright p {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: SimSun;
+  font-weight: 400;
+  color: #666666;
+}
