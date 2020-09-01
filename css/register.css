@@ -1,0 +1,145 @@
+.header {
+  height: 100px;
+}
+.header .w {
+  height: 100px;
+  border-bottom: 2px solid #B1191A;
+}
+.header .w .logo {
+  top: 0px;
+}
+.header .w .logo a {
+  height: 100px;
+  line-height: 100px;
+  background: none;
+}
+.register_box {
+  height: 520px;
+  margin-top: 30px;
+}
+.register_box .w .box_title {
+  height: 41px;
+  background-color: #ececec;
+}
+.register_box .w .box_title h3 {
+  float: left;
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 41px;
+  font-weight: 400;
+  color: #333333;
+}
+.register_box .w .box_title span {
+  float: right;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 41px;
+  color: #333333;
+}
+.register_box .w .box_title span a {
+  font-size: 14px;
+  color: #C81623;
+}
+.register_box .w .box_form {
+  width: 1200px;
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+}
+.register_box .w .box_form form {
+  width: 570px;
+  margin: 50px auto;
+}
+.register_box .w .box_form .form_groug {
+  margin-bottom: 20px;
+}
+.register_box .w .box_form .form_groug label {
+  display: inline-block;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4D4D4D;
+  line-height: 36px;
+  text-align: right;
+}
+.register_box .w .box_form .form_groug input[type="text"] {
+  width: 240px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  padding-left: 20px;
+}
+.register_box .w .box_form .form_groug input[type="checkbox"],
+.register_box .w .box_form .form_groug input[type="submit"] {
+  cursor: pointer;
+}
+.register_box .w .box_form .form_groug input[type="checkbox"] {
+  height: 16px;
+  vertical-align: middle;
+}
+.register_box .w .box_form .form_groug .info {
+  font-size: 12px;
+  font-weight: 400;
+  color: #DF3033;
+  line-height: 36px;
+}
+.register_box .w .box_form .form_groug .info .icon_error {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: 0 12px;
+  background: url(../images/error.png) no-repeat;
+}
+.register_box .w .box_form .form_groug .info .icon_success {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: 0 12px;
+  background: url(../images/success.png) no-repeat;
+}
+.register_box .w .box_form .form_groug .btn {
+  margin-left: 125px;
+  width: 200px;
+  height: 34px;
+  color: #fff;
+  background: #C81623;
+}
+.register_box .w .box_form .safe {
+  padding-left: 182px;
+}
+.register_box .w .box_form .safe .weak,
+.register_box .w .box_form .safe .middle,
+.register_box .w .box_form .safe .strong {
+  display: inline-block;
+  width: 34px;
+  height: 13px;
+  font-size: 12px;
+  color: #FFFFFF;
+  line-height: 12px;
+  text-align: center;
+}
+.register_box .w .box_form .safe .hint {
+  color: #B3B3B3;
+}
+.register_box .w .box_form .safe .weak {
+  background: #DE1111;
+}
+.register_box .w .box_form .safe .middle {
+  background: #40B83F;
+}
+.register_box .w .box_form .safe .strong {
+  background: #F79100;
+}
+.register_box .w .box_form .protocol {
+  margin-left: 103px;
+}
+.register_box .w .box_form .protocol a {
+  color: #1BA1E6;
+}
+.footer {
+  padding-top: 0px;
+  margin-top: 100px;
+  height: 120px;
+  background: #fff;
+}
