@@ -104,6 +104,7 @@
   border: 1px solid #DFDFDF;
 }
 .header .shopcar a {
+  display: block;
   padding: 11px 2px;
 }
 .header .shopcar a .count {
